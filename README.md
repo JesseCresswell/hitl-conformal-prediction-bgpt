@@ -1,7 +1,3 @@
-<p align="center">
-<a href="https://layer6.ai/"><img src="https://github.com/layer6ai-labs/DropoutNet/blob/master/logs/logobox.jpg" width="180"></a>
-</p> 
-
 <div align="center">
 <h1>
 <b>
@@ -11,7 +7,7 @@ Conformal Prediction Sets Improve Human Decision Making
 <h4>
 </div>
 
-This is the codebase accompanying the paper ["Conformal Prediction Sets Improve Human Decision Making"](https://arxiv.org/abs/2401.13744). Here we discuss how to generate the datasets of conformal prediction sets used in the paper.
+This is the codebase accompanying the paper "Conformal Prediction Sets Improve Human Decision Making", submitted to the BGPT Workshop 2024. Here we discuss how to generate the datasets of conformal prediction sets used in the paper.
 
 ## Setup
 
@@ -37,7 +33,7 @@ The basic usage is as follows:
 
 where `<dataset>` is the desired dataset. We have implemented `fashion-mnist`, `go-emotions`, `object-net`, and `few-nerd`.
 
-`fashion-mnist`, `go-emotions`, and `few-nerd` will be automatically downloaded when the code is run. `object-net` can be downloaded in its entirety from the original [source](https://objectnet.dev/) and preprocessed as in [this function](https://github.com/layer6ai-labs/hitl-conformal-prediction/blob/master/dataset_utils.py#L330). Since only a small subset is needed for our code, we provide a [link](https://drive.google.com/drive/folders/1Ld3CzbfANHR7zPJGteKaf6qHURlMcheW?usp=drive_link) to download only what is needed, and already pre-processed.
+`fashion-mnist`, `go-emotions`, and `few-nerd` will be automatically downloaded when the code is run. `object-net` can be downloaded in its entirety from the original [source](https://objectnet.dev/) and preprocessed as in [this function](https://github.com/layer6ai-labs/hitl-conformal-prediction/blob/master/dataset_utils.py#L330).
 
 ### Dynamic Updating of Config Values
 
@@ -68,11 +64,4 @@ By default, the `main` command above will create a directory of the form `logs/<
 - Output csvs containing conformal prediction sets for the test data
 
 ## BibTeX
-```
-@article{cresswell2024conformal,
-  title={Conformal Prediction Sets Improve Human Decision Making}, 
-  author={Jesse C. Cresswell and Yi Sui and Bhargava Kumar and Noël Vouitsis},
-  journal={arXiv:2401.13744},
-  year={2024}
-}
-```
+Anonymized
